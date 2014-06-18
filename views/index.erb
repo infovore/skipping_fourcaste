@@ -17,14 +17,20 @@
         padding: 10px;
       }
 
+      #forecast {
+        font-family: monospace;
+        max-width: 600px;
+      }
+
     </style>
   </head>
   <body>
     <h1>The Skipping Fourcaste at <%= time %>GMT</h1>
 
-    <% forecast_lines.each do |line| %>
-      <p><%= line %></p>
-    <% end %>
-
+    <div id="forecast">
+      <% forecast_lines.each do |line| %>
+        <p><%= line %></p>
+      <% end %>
+    </div>
   </body>
 </html>
