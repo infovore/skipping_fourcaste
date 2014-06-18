@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Cheney</title>
+    <style>
+      label {
+        font-weight: bold;
+        display: block;
+      }
+      
+      form div {
+        margin: 0 0 20px;
+      }
+
+      #output {
+        background: #eee;
+        border: 1px solid #888;
+        padding: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>The Skipping Fourcaste at <%= time %>GMT</h1>
+
+    <% forecast_lines.each do |line| %>
+      <p><%= line %></p>
+    <% end %>
+
+  </body>
+</html>
